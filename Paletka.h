@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <SFML/Graphics.hpp>
 
 class Paletka {
@@ -33,7 +33,7 @@ public:
 		shape.setPosition({ x, y });
 	};
 	void clampToBounds(float width) {
-		if(x-szerokosc/2<0)
+		if (x - szerokosc / 2 < 0)
 			x = szerokosc / 2;
 		if (x + szerokosc / 2 > width)
 			x = width - szerokosc / 2;
